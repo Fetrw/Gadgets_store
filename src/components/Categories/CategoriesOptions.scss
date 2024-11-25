@@ -1,0 +1,28 @@
+@import '../../styles/utils/variables';
+@import '../../styles/utils/mixins';
+
+.categories {
+  padding: 80px 0px;
+
+  @include on-tablet {
+    padding: 64px 0px;
+  }
+
+  @include on-mobile {
+    padding: 56px 0px;
+  }
+
+  &__content {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @include h2;
+
+    width: 100%;
+    max-width: 560px;
+    height: 41px;
+    text-align: left;
+  }
+}
